@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>E-commerce</title>
+
+<!--Bootstrap CDN-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!--Font Awesome CDN-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="top">
+<section class="header_menu" id="header_menu">
+  <div class="container-fluid px-0 shadow">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto  ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">Product</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="category.html">Category</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us </a>
+        </li>
+       
+      </ul>
+      <div class="search p-3 justify-content-end">
+        <a href="search.html" class="btn btn-sm btn-outline-primary">Search </a>
+      </div>
+      <div class="cart p-3 justify-content-end">
+      <a href="cart.html">
+        <i class="fas fa-shopping-cart fa-2x"></i>
+        <span class="badge rounded-pill bg-primary">24
+        </span>
+      </a>
+</div>
+      
+    </div>
+  </div>
+</nav>
+</div>
+</section>
+
+<section class="header_carousel" id="header_carousel">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://cdn.pixabay.com/photo/2016/04/20/08/21/entrepreneur-1340649_960_720.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.pixabay.com/photo/2018/05/16/18/08/e-commerce-3406613_960_720.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.pixabay.com/photo/2014/07/27/09/42/e-commerce-402822_960_720.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+
+</section>
+
+<section class="shop_by_category py-3 my-3" id="shop_by_category">
+<div class="container-fluid">
+<div class="section-title text-center mb">
+
+  <h1 class="text-capitalize">Shop By Category</h1>
+
+</div><br> <br> 
+<div class="row">
+<div class="col-md-4 ">
+  <div class="card">
+    <a href="category.html">
+      <img class="card-img img img-fluid" src="https://cdn.pixabay.com/photo/2018/06/05/15/29/mindset-3455748_960_720.jpg" style="height:200px;">
+    </a>
+
+  </div>
+
+</div>
+
+
+<div class="col-md-4 ">
+  <div class="card ">
+    <a href="category.html">
+      <img class="card-img img img-fluid" src="https://cdn.pixabay.com/photo/2015/10/08/11/31/learn-977543_960_720.jpg" style="height:200px;">
+    </a>
+
+  </div>
+
+</div>
+
+<div class="col-md-4 ">
+  <div class="card ">
+    <a href="category.html">
+      <img class="card-img img img-fluid" src="https://cdn.pixabay.com/photo/2016/06/12/09/08/iphone-1451614_960_720.png" style="height:200px;">
+    </a>
+
+  </div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="products py-3 my-3" id="products" style="text-align:center;">
+<div class="container">
+<div class="section-title text-center mb">
+
+  <h1 class="text-capitalize">Latest Products</h1>
+
+</div><br> <br> 
+<div class="row mb-5">
+<div class="col-md-4 col-12 p-2">
+ <div class="single_product shadow text-center p-1">
+   <div class="product_img">
+      <span class="badge rounded-pill bg-danger">New
+        </span>
+     <a href="product_detail.html"> <img src="data:image/jpeg;base64,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" style="width:100%; height:180px;">
+     </a>
+    
+   </div>
+
+ 
+ <div class="product-caption my-3">
+   <div class="product-ratting">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+     <i class="far fa-star"></i>
+   </div>
+
+<h4><a href="product_detail.html">Pink Dress
+  </a></h4>
+  <b> <span class="mr-1">Rs </span><span>400</span> </b>
+ </div>
+
+</div>
+
+</div>
+<br>
+<div class="col-md-4 col-12 p-2">
+ <div class="single_product shadow text-center p-1">
+   <div class="product_img">
+      <span class="badge rounded-pill bg-warning">Latest
+        </span>
+     <a href="product_detail.html"> <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ_ivUq8OJd6FW_HlELdg3Wr_6i_SFyd36AUYCe50plsBRFdMnGkfbmpMoSL6DzxPvJEYC4Wx2-PLdGp6uGHQZHtTKD4DYiGqFuDtFrL2J4fNrT4y7UKPP0QA&usqp=CAE" style="width:100%; height:180px;">
+     </a>
+    
+   </div>
+
+
+ <div class="product-caption my-3">
+   <div class="product-ratting">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="far fa-star"></i>
+   </div>
+<h4><a href="product_detail.html">Shoes
+  </a></h4>
+  <b> <span class="mr-1">Rs </span><span>2,500</span> </b>
+ </div>
+
+  </div>
+</div>
+<br>
+<div class="col-md-4 col-12 p-2">
+ <div class="single_product shadow text-center p-1">
+   <div class="product_img">
+      <span class="badge rounded-pill bg-danger">New
+        </span>
+     <a href="product_detail.html"> <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSufM9Oinmsm8HGhfeAnbtbnMj--H_xyo5YOz_7NkfwYNQA8w8WRe-YptGxs7xRqBK1S3thAgXEutqTjFCtNLM3wWNHaecWiDwESCUR5m7zjUYKqunYmWEd3Q&usqp=CAE" style="width:100%; height:180px;">
+     </a>
+    
+   </div>
+
+
+ <div class="product-caption my-3">
+   <div class="product-ratting">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="far fa-star"></i>
+     <i class="far fa-star"></i>
+   </div>
+   <h4><a href="product_detail.html">Hand Bags
+  </a></h4>
+  <b> <span class="mr-1">Rs </span><span>800</span> </b>
+ </div>
+ </div>
+
+ 
+ 
+</div>
+
+
+<br>
+
+<div class="row mb-5">
+<div class="col-md-4 col-12 p-2">
+ <div class="single_product shadow text-center p-1">
+   <div class="product_img">
+      <span class="badge rounded-pill bg-danger">New
+        </span>
+     <a href="product_detail.html"> <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ__ibTMmdc4-euYZ85IsRQmhIPVsK4lp0EXxDPCBG1Ald0fGluWF0ckfv08kSeBQs24-lm672tff7CRoz_aB0e9jYFjfwwIXntXaAAF1JL8iX63GlEY_yC&usqp=CAE" style="width:100%; height:180px;">
+     </a>
+    
+   </div>
+
+ 
+ <div class="product-caption my-3">
+   <div class="product-ratting">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+     <i class="far fa-star"></i>
+   </div>
+
+<h4><a href="product_detail.html">Pink Dress
+  </a></h4>
+  <b> <span class="mr-1">Rs </span><span>400</span> </b>
+ </div>
+
+</div>
+
+</div>
+<br>
+<div class="col-md-4 col-12 p-2">
+ <div class="single_product shadow text-center p-1">
+   <div class="product_img">
+      <span class="badge rounded-pill bg-warning">Latest
+        </span>
+     <a href="product_detail.html"> <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ_ivUq8OJd6FW_HlELdg3Wr_6i_SFyd36AUYCe50plsBRFdMnGkfbmpMoSL6DzxPvJEYC4Wx2-PLdGp6uGHQZHtTKD4DYiGqFuDtFrL2J4fNrT4y7UKPP0QA&usqp=CAE" style="width:100%; height:180px;">
+     </a>
+    
+   </div>
+
+
+ <div class="product-caption my-3">
+   <div class="product-ratting">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="far fa-star"></i>
+   </div>
+<h4><a href="product_detail.html">Shoes
+  </a></h4>
+  <b> <span class="mr-1">Rs </span><span>2,500</span> </b>
+ </div>
+
+  </div>
+</div>
+<br>
+<div class="col-md-4 col-12 p-2">
+ <div class="single_product shadow text-center p-1">
+   <div class="product_img">
+      <span class="badge rounded-pill bg-danger">New
+        </span>
+     <a href="product_detail.html"> <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSufM9Oinmsm8HGhfeAnbtbnMj--H_xyo5YOz_7NkfwYNQA8w8WRe-YptGxs7xRqBK1S3thAgXEutqTjFCtNLM3wWNHaecWiDwESCUR5m7zjUYKqunYmWEd3Q&usqp=CAE" style="width:100%; height:180px;">
+     </a>
+    
+   </div>
+
+
+ <div class="product-caption my-3">
+   <div class="product-ratting">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="far fa-star"></i>
+     <i class="far fa-star"></i>
+   </div>
+   <h4><a href="product_detail.html">Hand Bags
+  </a></h4>
+  <b> <span class="mr-1">Rs </span><span>800</span> </b>
+ </div>
+ </div>
+
+ 
+ 
+</div>
+</div>
+</section>
+
+<section class="features py-3 my-3" id="features" style="text-align:center;">
+<div class="container">
+<div class="section-title text-center mb">
+
+  <h1 class="text-capitalize">Features </h1>
+
+</div><br> <br> 
+
+<div class="row mb-5">
+<div class="col-md-4 col-12 p-2">
+ <div class="single_product shadow text-center p-1">
+   <div class="product_img">
+     
+      <i class="fas fa-truck" style="font-size:38px;"></i>
+      <h4>Free Shipping </h4>
+
+     <p>
+      Free shipping is an increasingly-popular option for online shopping, where customers do not have to pay an additional shipping charge.
+     </p>
+    
+   </div>
+
+</div>
+
+</div>
+<br>
+<div class="col-md-4 col-12 p-2">
+ <div class="single_product shadow text-center p-1">
+   <div class="product_img">
+     
+    <i class="fas fa-lock" style="font-size:38px;"></i>
+    <h4> Secure Payment </h4>
+    <p> A secure payment page means that the webpage where credit card numbers are entered is secured via Secure Sockets Layer (SSL) 128 bit encryption. </p>
+    
+   </div>
+
+
+
+  </div>
+</div>
+<br>
+<div class="col-md-4 col-12 p-2">
+ <div class="single_product shadow text-center p-1">
+   <div class="product_img">
+      <i class="fab fa-cc-amazon-pay" style="font-size:38px;"></i>
+      <h4>Online Payment </h4>
+      <p> Online payment refers to money that is exchanged electronically. This involves use of the internet and digital stored value systems.</p>
+    
+   </div>
+
+ </div>
+</div>
+ 
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Navbar</h5>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam.
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Quick Links</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark">About</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Offers & Discounts</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Get Coupons</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">New Products</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-dark">Womens Clothes</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Electronics</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Gift & Toys</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Men Essentials</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Supports</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark">FAQ</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Report</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+  Copyright © 2020
+    <a class="text-dark" href="https://mdbootstrap.com/">All rights reserved</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<div class="backtop" style="float:right;">
+<a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button">
+  <i class="fas fa-arrow-circle-up text-dark"></i>
+</a>
+</div>
+    <!--Bootstrap CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
